@@ -8,7 +8,7 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "r3000dis.h"
+#include "highly_experimental\r3000dis.h"
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -45,7 +45,7 @@ sint32 EMU_CALL r3000dis(char *dest, uint32 rich, uint32 pc, uint32 ins) {
     "C0_16","C0_17","C0_18","C0_19","C0_20","C0_21","C0_22","C0_23",
     "C0_24","C0_25","C0_26","C0_27","C0_28","C0_29","C0_30","C0_31"
   };
-  const char *fmt;
+  char *fmt = NULL;
   int j, col = 0;
   if(ins < 0x04000000) {
     switch(ins & 0x3F) {
@@ -240,7 +240,7 @@ ok:
     case 'S': if(rich) dest[col++] = RICH_CODE_REGISTER; strcpy(dest+col, regname[INS_S]); while(dest[col]) col++; break;
     case 'T': if(rich) dest[col++] = RICH_CODE_REGISTER; strcpy(dest+col, regname[INS_T]); while(dest[col]) col++; break;
     case 'D': if(rich) dest[col++] = RICH_CODE_REGISTER; strcpy(dest+col, regname[INS_D]); while(dest[col]) col++; break;
-    case 'H': sprintf(dest+col, "%d", INS_H); while(dest[col]) col++; break;
+    case 'H': sprintf(dest+col, "%u", INS_H); while(dest[col]) col++; break;
     case 'I': sprintf(dest+col, "0x%04X", INS_I); while(dest[col]) col++; break;
     case 'B': if(rich) dest[col++] = RICH_CODE_ADDRESS; sprintf(dest+col, "0x%08X", REL_I); while(dest[col]) col++; break;
     case 'J': if(rich) dest[col++] = RICH_CODE_ADDRESS; sprintf(dest+col, "0x%08X", ABS_I); while(dest[col]) col++; break;

@@ -11,69 +11,69 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bios.c">
+    <ClCompile Include="src\bios.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="iop.c">
+    <ClCompile Include="src\iop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ioptimer.c">
+    <ClCompile Include="src\ioptimer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="psx.c">
+    <ClCompile Include="src\psx.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="r3000.c">
+    <ClCompile Include="src\r3000.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="r3000asm.c">
+    <ClCompile Include="src\r3000asm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="r3000dis.c">
+    <ClCompile Include="src\r3000dis.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="spu.c">
+    <ClCompile Include="src\spu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="spucore.c">
+    <ClCompile Include="src\spucore.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vfs.c">
+    <ClCompile Include="src\vfs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bios.h">
+    <ClInclude Include="include\highly_experimental\bios.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="iop.h">
+    <ClInclude Include="include\highly_experimental\iop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ioptimer.h">
+    <ClInclude Include="include\highly_experimental\ioptimer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="psx.h">
+    <ClInclude Include="include\highly_experimental\psx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="r3000.h">
+    <ClInclude Include="include\highly_experimental\r3000.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="r3000asm.h">
+    <ClInclude Include="include\highly_experimental\r3000asm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="r3000dis.h">
+    <ClInclude Include="include\highly_experimental\r3000dis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="spu.h">
+    <ClInclude Include="include\highly_experimental\spu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="spucore.h">
+    <ClInclude Include="include\highly_experimental\spucore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vfs.h">
+    <ClInclude Include="include\highly_experimental\vfs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="emuconfig.h">
+    <ClInclude Include="include\highly_experimental\emuconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

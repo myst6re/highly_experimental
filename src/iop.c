@@ -8,13 +8,13 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "iop.h"
+#include "highly_experimental\iop.h"
 
-#include "psx.h"
-#include "ioptimer.h"
-#include "r3000.h"
-#include "spu.h"
-#include "bios.h"
+#include "highly_experimental\psx.h"
+#include "highly_experimental\ioptimer.h"
+#include "highly_experimental\r3000.h"
+#include "highly_experimental\spu.h"
+#include "highly_experimental\bios.h"
 
 //#include <windows.h>
 

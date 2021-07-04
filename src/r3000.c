@@ -8,7 +8,7 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "r3000.h"
+#include "highly_experimental\r3000.h"
 
 /////////////////////////////////////////////////////////////////////////////
 /*

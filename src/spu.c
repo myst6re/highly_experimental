@@ -8,9 +8,9 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "spu.h"
+#include "highly_experimental\spu.h"
 
-#include "spucore.h"
+#include "highly_experimental\spucore.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 /*

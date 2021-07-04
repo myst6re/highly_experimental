@@ -8,7 +8,7 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "bios.h"
+#include "highly_experimental/bios.h"
 
 /////////////////////////////////////////////////////////////////////////////
 
