@@ -8,15 +8,15 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "psx.h"
+#include "highly_experimental\psx.h"
 
-#include "r3000.h"
-#include "iop.h"
-#include "spu.h"
-#include "bios.h"
-#include "ioptimer.h"
-#include "spucore.h"
-#include "vfs.h"
+#include "highly_experimental\r3000.h"
+#include "highly_experimental\iop.h"
+#include "highly_experimental\spu.h"
+#include "highly_experimental\bios.h"
+#include "highly_experimental\ioptimer.h"
+#include "highly_experimental\spucore.h"
+#include "highly_experimental\vfs.h"
 
 /////////////////////////////////////////////////////////////////////////////
 //

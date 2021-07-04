@@ -8,7 +8,7 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "vfs.h"
+#include "highly_experimental\vfs.h"
 
 /////////////////////////////////////////////////////////////////////////////
 //

@@ -8,7 +8,8 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "r3000asm.h"
+#include <ctype.h>
+#include "highly_experimental\r3000asm.h"
 
 /////////////////////////////////////////////////////////////////////////////
 

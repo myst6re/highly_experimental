@@ -8,7 +8,7 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "spucore.h"
+#include "highly_experimental\spucore.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 /*
