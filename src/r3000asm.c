@@ -9,7 +9,7 @@
 #endif
 
 #include <ctype.h>
-#include "highly_experimental\r3000asm.h"
+#include "highly_experimental/r3000asm.h"
 
 /////////////////////////////////////////////////////////////////////////////
 
