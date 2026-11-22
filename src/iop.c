@@ -8,13 +8,13 @@
 #error "Hi I forgot to set EMU_COMPILE"
 #endif
 
-#include "highly_experimental\iop.h"
+#include "highly_experimental/iop.h"
 
-#include "highly_experimental\psx.h"
-#include "highly_experimental\ioptimer.h"
-#include "highly_experimental\r3000.h"
-#include "highly_experimental\spu.h"
-#include "highly_experimental\bios.h"
+#include "highly_experimental/psx.h"
+#include "highly_experimental/ioptimer.h"
+#include "highly_experimental/r3000.h"
+#include "highly_experimental/spu.h"
+#include "highly_experimental/bios.h"
 
 //#include <windows.h>
 
@@ -943,7 +943,7 @@ static void perform_state_offset(struct R3000_MEMORY_MAP *map, struct IOP_STATE 
   // It's safe to typecast this "pointer" to a uint32 since, due to
   // the STATEOFS hack, it'll never be bigger than 4GB
   //
-  uint32 o = (uint32)(map->type.p);
+  uint32 o = (uint32)(size_t)(map->type.p);
   map->type.p = ((uint8*)state) + o;
 }
 
@@ -951,7 +951,7 @@ static void perform_state_offset(struct R3000_MEMORY_MAP *map, struct IOP_STATE 
 // Recompute the memory maps.
 // PERFORMS NO REGISTRATION with the actual R3000 state.
 //
-static void recompute_memory_maps(struct IOP_STATE *state) {
+static void EMU_CALL recompute_memory_maps(struct IOP_STATE *state) {
   sint32 i;
   struct R3000_MEMORY_MAP *mapload  = MAPLOAD;
   struct R3000_MEMORY_MAP *mapstore = MAPSTORE;
